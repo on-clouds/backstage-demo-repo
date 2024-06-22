@@ -44,7 +44,7 @@ metadata:
   tags:
     - simplenodeservice
 spec:
-  owner: infrastructure
+  owner: platform-team
   type: service
   parameters:
     - title: Environment Template Info
