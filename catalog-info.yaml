@@ -112,12 +112,12 @@ spec:
           type: boolean
           default: false      
       dependencies:
-        externalDNSProvider:
+        externalDNSEnabled:
           oneOf:
             - properties:
                 externalDNSEnabled:
                   boolean: true
-                java version:
+                externalDNSProvider:
                   type: "string"
                   enum:
                     - digitalocean
