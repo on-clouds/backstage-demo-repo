@@ -96,6 +96,19 @@ spec:
           description: "Enable external DNS"
           type: boolean
           default: false
+
+      dependencies:
+        externalDNSProvider:
+          oneOf:
+            - properties:
+                externalDNSEnabled:
+                  boolean: true
+                java version:
+                  type: "string"
+                  enum:
+                    - digitalocean
+                    - aws
+                    - gcp
         kyvernoEnabled:
           title: "Kyverno"
           description: "Enable Kyverno"
